@@ -9,7 +9,13 @@ while (UNWANTED_ARGS_PATTERN.test(args[0])) {
 }
 
 // Set various const
-var DEBUG = args.indexOf('-d') > -1
+var debugArgIndex = args.indexOf('-d')
+if (debugArgIndex > -1) {
+  args.splice(debugArgIndex, 1)
+  var DEBUG = true
+} else {
+  var DEBUG = false
+}
 var CAT_ACTIONS
 var CLIENT
 var CAT_REACTIONS
@@ -111,14 +117,16 @@ function getRandomInt (min, max) {
 }
 
 function getRandomUserNick () {
-  var userNickList = Object.keys(CLIENT.chans[CHAN].users)
-  var randomUserNick = getRandomValueFromArray(userNickList)
+  var userNickList = Object.keys(CLIENT.chans[CHAN].users).filter((nick) => (nick !== NICK))
+  var randomUserNick = getRandomValueFromArray(userNickList) || 'personne :('
   return randomUserNick
 }
 
 function getRandomValueFromArray (arr) {
   var arrLen = arr.length
-  if (arrLen === 1) {
+  if (arrLen === 0) {
+    var randomValue = null
+  } else if (arrLen === 1) {
     var randomValue = arr[0]
   } else {
     var randomIndex = getRandomInt(0, arrLen - 1)
