@@ -1,0 +1,187 @@
+{
+    "irc": {
+        "user":"entre_",
+        "server":"bender.corp.wallix.com",
+        "port":6667,
+        "channel":"#a-poils",
+        "userName":"entrechat-beta",
+        "clientName":"entrechat-beta",
+        "realName": "entrechat-beta",
+        "autoJoin": "true",
+        "actionTime": 1800
+    },
+    "commands": {
+        "live": ["tasse", "frotte", "miaule", "leche", "lechouille", "museau"],
+        "actions": {
+            "tate": ["interrogatif", "pur", "folie"],
+            "tâte": ["interrogatif", "pur"],
+            "botte": ["griffe", "accrocheJambe"],
+            "grattouille": ["pur", "turn", "bouleGenoux"],
+            "caresse": ["pur", "turn", "bouleGenoux"],
+            "caline": ["pur", "lechouille", "love"],
+            "câline": ["pur", "lechouille", "love"],
+            "tripote": ["turn", "pouitch"],
+            "lance": ["couine", "interrogatif", "revient"],
+            "attache": ["interrogatif", "pur", "couine"],
+            "frappe": ["couine", "hemorragies"],
+            "donne du poisson à": ["revive", "pur", "interrogatif"],
+            "donne du poisson a": ["revive", "pur", "interrogatif"],
+            "donne du lait à": ["pur", "lechouille", "chiasse"],
+            "donne du lait a": ["pur", "lechouille", "chiasse"],
+            "met une carotte dans la narine de": ["etouffe"],
+            "insère une patate dans les narines de": ["etouffe2"],
+            "insere une patate dans les narines de": ["etouffe2"],
+            "donne des coups de poisson à": ["loque", "riposte"],
+            "donne des coups de poisson a": ["loque", "riposte"],
+            "jette des carottes sur": ["mange", "interrogatif", "quoiLegume"],
+            "agite une pelote de laine devant": ["joue", "meprise","dechiquete"],
+            "embete": ["griffe", "tasse", "pisse", "couine"]
+        }
+    },
+    "actions": {
+        "museau": {
+            "text": "donne des petits coups de museau à %(user)s",
+            "type": "action"
+        },
+        "interrogatif": {
+            "text": "Maou ?",
+            "type": "say"
+        },
+        "couine": {
+            "text": "Meoooooow !:(",
+            "type": "say"
+        },
+        "love": {
+            "text": "se love contre %(user)s",
+            "type": "action"
+        },
+        "lechouille": {
+            "text": "léchouille %(user)s",
+            "type": "action"
+        },
+        "leche": {
+            "text": "lèche la main de %(user)s",
+            "type": "action"
+        },
+        "frotte": {
+            "text": "se frotte contre %(user)s",
+            "type": "action"
+        },
+        "tasse": {
+            "text": "fait tomber une tasse",
+            "type": "action"
+        },
+        "miaule": {
+            "text": "Miaou",
+            "type": "say"
+        },
+        "pur": {
+            "text": "ronronne",
+            "type": "action"
+        },
+        "feule": {
+            "text": "Shhhhh",
+            "type": "say"
+        },
+        "griffe": {
+            "text": "griffe %(user)s",
+            "type": "action"
+        },
+        "explode": {
+            "text": "explose et met plein de morceaux sur %(user)s",
+            "type": "action"
+        },
+        "accrocheJambe": {
+            "text": "s'accroche a la jambe de %(user)s en y plantant profondément ses griffes",
+            "type": "action"
+        },
+        "turn": {
+            "text": "se roule sur le dos",
+            "type": "action"
+        },
+        "boule": {
+            "text": "se roule en boule et s'endort",
+            "type": "action"
+        },
+        "pouitch": {
+            "text": "en fout partout",
+            "type": "action"
+        },
+        "revient": {
+            "text": "revient vers %(user)s pour recommencer",
+            "type": "action"
+        },
+        "hemorragie": {
+            "text": "décède des hémorragies causées par %(user)s",
+            "type": "action"
+        },
+        "loque": {
+            "text": "devient une loque suite à tous ses os broyés",
+            "type": "action"
+        },
+        "riposte": {
+            "text": "contre attaque à coups de papattes sur le visage pas beau de %(user)s",
+            "type": "action"
+        },
+        "etouffe": {
+            "text": "ne peut plus respirer parce qu'il est con et n'utilise qu'une narine",
+            "type": "action"
+        },
+        "etouffe2": {
+            "text": "ne peut plus respirer et a les yeux qui explosent *poc !*",
+            "type": "action"
+        },
+        "mange": {
+            "text": "mange tout ce qu'on lui donne (il est un peu con des fois)",
+            "type": "action"
+        },
+        "quoiLegume": {
+            "text": "regarde %(user)s avec une drôle de tête et ne comprend pas ce que c'est",
+            "type": "action"
+        },
+        "revive": {
+            "text": "ressuscite tel Jésus !",
+            "type": "action"
+        },
+        "chiasse": {
+            "text": "a maintenant la chiasse et en fout partout sur %(user)s",
+            "type": "action"
+        },
+        "bouleGenoux": {
+            "text": "se roule en boule sur les genoux de %(user)s",
+            "type": "action"
+        },
+        "explose": {
+            "text": "ne peut plus évacuer et explose",
+            "type": "action"
+        },
+        "joue":{
+            "text": "joue avec la pelote et plante ses griffes sur %(user)s",
+            "type": "action"
+        },
+         "meprise": {
+             "text" : "regarde %(users)s avec une profonde indifférence",
+             "type": "action"
+        },
+        "dechiquete": {
+           "text":  "dechiquete la pelote et recouvre %(users)s de laine",
+            "type": "action"
+        },
+        "folie": {
+            "text": "court partout et se prend un mur",
+            "type": "action"
+        },
+        "griffe2": {
+            "text": "donne un bon coup de griffe a %(users)s",
+            "type": "action"
+        },
+        "pisse": {
+            "text": "pisse sur le canapé en regardant %(users)s d'un air mauvais",
+            "type": "action"
+        },
+        "default": {
+            "text": "regarde %(user)s avec des gros yeux",
+            "type": "action"
+        }
+    }
+}
